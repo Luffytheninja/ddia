@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDIA — Curated Chaos. Handmade Joy.</title>
+    <meta
+      name="description"
+      content="DDIA is an experimental ecommerce platform celebrating the beautifully random intersection of brownies, lipgloss, and crochet. Handmade joy, unapologetic creativity."
+    />
+    <meta name="theme-color" content="#1a0a1e" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Syne:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CUSTOM CURSOR -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- NAVIGATION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <nav class="nav" id="mainNav">
+      <a href="#" class="nav__logo">
+        <span class="logo-d">D</span><span class="logo-d">D</span
+        ><span class="logo-i">I</span><span class="logo-a">A</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+
+      <div class="nav__menu" id="navMenu">
+        <div class="nav__menu-bg"></div>
+        <ul class="nav__links">
+          <li><a href="#shop" class="nav__link" data-index="01">Shop</a></li>
+          <li><a href="#about" class="nav__link" data-index="02">About</a></li>
+          <li><a href="#vibes" class="nav__link" data-index="03">Vibes</a></li>
+        </ul>
+        <div class="nav__menu-footer">
+          <p class="nav__tagline">
+            therapy is expensive.<br />this brownie is $6.
+          </p>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- HERO SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero__image-wrap">
+        <img src="Gemini_Generated_Image_998xlc998xlc998x.png" alt="DDIA — Curated Chaos hero visual" class="hero__image" />
+        <div class="hero__image-overlay"></div>
+      </div>
+
+      <div class="hero__bg-shapes">
+        <div class="shape shape--blob-1"></div>
+        <div class="shape shape--blob-2"></div>
+        <div class="shape shape--blob-3"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">est. whenever we felt like it</p>
+        <h1 class="hero__title">
+          <span class="hero__title-line hero__title-line--1">Curated</span>
+          <span class="hero__title-line hero__title-line--2">Chaos</span>
+          <span class="hero__title-line hero__title-line--3">™</span>
+        </h1>
+        <p class="hero__subtitle">
+          Brownies. Lipgloss. Crochet.<br />Yes, all three. No, it doesn't need
+          to make sense.
+        </p>
+        <a href="#shop" class="hero__cta">
+          <span>Enter the Chaos</span>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M7 17L17 7M17 7H7M17 7V17" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero__scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- MARQUEE -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="marquee">
+      <div class="marquee__track">
+        <span
+          >Brownies ✦ Lipgloss ✦ Crochet ✦ Joy ✦ Chaos ✦ Handmade ✦ Luxury ✦
+          Brownies ✦ Lipgloss ✦ Crochet ✦ Joy ✦ Chaos ✦ Handmade ✦ Luxury ✦
+          Brownies ✦ Lipgloss ✦ Crochet ✦ Joy ✦ Chaos ✦ Handmade ✦ Luxury
+          ✦</span
+        >
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SHOP / CATEGORIES -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="shop" id="shop">
+      <div class="shop__header">
+        <p class="section-eyebrow">What We Sell</p>
+        <h2 class="section-title">Three Things.<br />Absolutely Zero Logic.</h2>
+      </div>
+
+      <div class="shop__grid">
+        <!-- BROWNIES -->
+        <article
+          class="category-card"
+          data-category="brownies"
+          id="card-brownies"
+        >
+          <div class="category-card__image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&h=750&fit=crop&q=80"
+              alt="Artisan brownies stacked with chocolate drizzle"
+              class="category-card__image"
+              loading="lazy"
+            />
+            <div class="category-card__overlay"></div>
+          </div>
+          <div class="category-card__content">
+            <span class="category-card__number">01</span>
+            <h3 class="category-card__title">Brownies<br />& Cakes</h3>
+            <p class="category-card__desc">
+              Therapy is expensive, but this brownie is $6. Dense, fudgy,
+              unreasonably good.
+            </p>
+            <div class="category-card__price-badge">from $6</div>
+            <a href="#" class="category-card__link">
+              <span>Shop Sweet</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- LIPGLOSS -->
+        <article
+          class="category-card"
+          data-category="lipgloss"
+          id="card-lipgloss"
+        >
+          <div class="category-card__image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1631214524020-7e18db9a8f92?w=600&h=750&fit=crop&q=80"
+              alt="Glossy lipgloss tubes with pink and berry shades"
+              class="category-card__image"
+              loading="lazy"
+            />
+            <div class="category-card__overlay"></div>
+          </div>
+          <div class="category-card__content">
+            <span class="category-card__number">02</span>
+            <h3 class="category-card__title">Lip<br />Gloss</h3>
+            <p class="category-card__desc">
+              Gloss that actually tastes like the flavor it claims to be.
+              Revolutionary, we know.
+            </p>
+            <div class="category-card__price-badge">from $12</div>
+            <a href="#" class="category-card__link">
+              <span>Shop Gloss</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- CROCHET -->
+        <article
+          class="category-card"
+          data-category="crochet"
+          id="card-crochet"
+        >
+          <div class="category-card__image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1615486511484-92e172cc4fe0?w=600&h=750&fit=crop&q=80"
+              alt="Colorful hand-crocheted items"
+              class="category-card__image"
+              loading="lazy"
+            />
+            <div class="category-card__overlay"></div>
+          </div>
+          <div class="category-card__content">
+            <span class="category-card__number">03</span>
+            <h3 class="category-card__title">Crochet<br />Pieces</h3>
+            <p class="category-card__desc">
+              Crochet a future, one granny square at a time. Bags, frogs, and
+              questionable hats included.
+            </p>
+            <div class="category-card__price-badge">from $18</div>
+            <a href="#" class="category-card__link">
+              <span>Shop Craft</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- ABOUT / PHILOSOPHY -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="about" id="about">
+      <div class="about__container">
+        <div class="about__text">
+          <p class="section-eyebrow">The Philosophy</p>
+          <h2 class="section-title">
+            We're the friend<br />who shows up with<br />homemade brownies<br />in
+            designer packaging.
+          </h2>
+          <p class="about__body">
+            Wearing a hand-crocheted bag and perfect lipgloss, obviously. DDIA
+            exists because treating yourself doesn't need to make sense—it just
+            needs to feel good. We take quality very seriously. We take
+            everything else not seriously at all.
+          </p>
+        </div>
+        <div class="about__values">
+          <div class="value-pill" data-value="chaos">
+            <span class="value-pill__icon">✦</span>
+            <span>Curated Chaos</span>
+          </div>
+          <div class="value-pill" data-value="luxury">
+            <span class="value-pill__icon">◆</span>
+            <span>Accessible Luxury</span>
+          </div>
+          <div class="value-pill" data-value="joy">
+            <span class="value-pill__icon">♥</span>
+            <span>Joy Over Perfection</span>
+          </div>
+          <div class="value-pill" data-value="community">
+            <span class="value-pill__icon">☻</span>
+            <span>Community Over Commerce</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- VIBES / FEATURED PRODUCTS -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="vibes" id="vibes">
+      <div class="vibes__header">
+        <p class="section-eyebrow">The Vibes</p>
+        <h2 class="section-title">Currently Obsessed With</h2>
+      </div>
+      <div class="vibes__carousel">
+        <div class="vibe-card">
+          <div class="vibe-card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1558326567-98ae2405596b?w=400&h=500&fit=crop&q=80"
+              alt="Salted caramel brownie"
+              loading="lazy"
+            />
+          </div>
+          <div class="vibe-card__info">
+            <span class="vibe-card__tag">Brownie</span>
+            <h4>Salted Caramel Sin</h4>
+            <p>$6.50</p>
+          </div>
+        </div>
+        <div class="vibe-card">
+          <div class="vibe-card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=500&fit=crop&q=80"
+              alt="Berry lipgloss"
+              loading="lazy"
+            />
+          </div>
+          <div class="vibe-card__info">
+            <span class="vibe-card__tag">Gloss</span>
+            <h4>Berry Delusion</h4>
+            <p>$14.00</p>
+          </div>
+        </div>
+        <div class="vibe-card">
+          <div class="vibe-card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1584992236310-6edddc08acff?w=400&h=500&fit=crop&q=80"
+              alt="Crochet frog"
+              loading="lazy"
+            />
+          </div>
+          <div class="vibe-card__info">
+            <span class="vibe-card__tag">Crochet</span>
+            <h4>Gerald the Frog</h4>
+            <p>$22.00</p>
+          </div>
+        </div>
+        <div class="vibe-card">
+          <div class="vibe-card__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=500&fit=crop&q=80"
+              alt="Chocolate cake"
+              loading="lazy"
+            />
+          </div>
+          <div class="vibe-card__info">
+            <span class="vibe-card__tag">Cake</span>
+            <h4>Midnight Velvet</h4>
+            <p>$28.00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- NEWSLETTER / CTA -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="newsletter" id="newsletter">
+      <div class="newsletter__container">
+        <div class="newsletter__content">
+          <h2 class="newsletter__title">Join the Club</h2>
+          <p class="newsletter__desc">
+            We're building a community of people who get it. First dibs on
+            drops, secret recipes, and unsolicited brownie opinions.
+          </p>
+          <form class="newsletter__form" id="newsletterForm">
+            <input
+              type="email"
+              placeholder="your@email.com"
+              class="newsletter__input"
+              required
+            />
+            <button type="submit" class="newsletter__btn">I Get It</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- FOOTER -->
+    <!-- ═══════════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__brand">
+          <span class="footer__logo">DDIA</span>
+          <p class="footer__tagline">Curated Chaos Since Whenever.</p>
+        </div>
+        <div class="footer__links">
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="#">Twitter</a>
+        </div>
+        <p class="footer__copy">
+          &copy; 2025 DDIA. All rights reserved. None of this makes sense and
+          that's the point.
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
